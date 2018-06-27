@@ -69,7 +69,7 @@ public class HaloUtils {
      */
     public static void cutCenterImage(String src, String dest, int w, int h, String suffix) {
         try {
-            Iterator iterator = ImageIO.getImageReadersByFormatName(suffix);
+            Iterator<ImageReader> iterator = ImageIO.getImageReadersByFormatName(suffix);
             ImageReader reader = (ImageReader) iterator.next();
             InputStream in = new FileInputStream(src);
             ImageInputStream iis = ImageIO.createImageInputStream(in);

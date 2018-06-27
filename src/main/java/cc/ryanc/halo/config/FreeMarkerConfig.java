@@ -40,12 +40,15 @@ public class FreeMarkerConfig {
 
     @PostConstruct
     public void setSharedVariable() {
+    	
         configuration.setSharedVariable("commonTag", commonTagDirective);
         configuration.setSharedVariable("articleTag", articleTagDirective);
         try {
             configuration.setSharedVariable("options", optionsService.findAllOptions());
             configuration.setSharedVariable("user", userService.findUser());
+            log.info("FreeMarker配置加载完成...");
         } catch (TemplateModelException e) {
+        	log.debug("FreeMarker配置加载失败...");
             e.printStackTrace();
         }
     }

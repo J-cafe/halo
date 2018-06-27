@@ -48,6 +48,7 @@ public class MvcConfig implements WebMvcConfigurer {
                 .excludePathPatterns("/install")
                 .excludePathPatterns("/install/do")
                 .excludePathPatterns("/static/**");
+        log.info("Mvc拦截器注册完成...");
     }
 
     /**
@@ -68,6 +69,7 @@ public class MvcConfig implements WebMvcConfigurer {
                 .addResourceLocations("classpath:/static/images/favicon.ico");
         registry.addResourceHandler("/backup/**")
                 .addResourceLocations("file:///" + System.getProperties().getProperty("user.home") + "/halo/backup/");
+        log.info("Mvc静态资源配置完成...");
     }
 
     @Override

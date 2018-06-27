@@ -133,7 +133,7 @@ public class InstallController {
             postService.saveByPost(post);
 
             //第一个评论
-            Comment comment = new Comment();
+            /*Comment comment = new Comment();
             comment.setPost(post);
             comment.setCommentAuthor("ruibaby");
             comment.setCommentAuthorEmail("i@ryanc.cc");
@@ -145,7 +145,7 @@ public class InstallController {
             comment.setCommentStatus(0);
             comment.setCommentAgent("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.162 Safari/537.36");
             comment.setIsAdmin(0);
-            commentService.saveByComment(comment);
+            commentService.saveByComment(comment);*/
 
             optionsService.saveOption("is_install", "true");
 
