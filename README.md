@@ -19,7 +19,6 @@
 - [License 许可证](#license-许可证)
 - [Todo 后续功能](#todo-后续功能)
 - [Thanks 感谢](#thanks-感谢)
-- [Donate 捐赠](#donate-捐赠)
 
 ## Introduction 简介
 
@@ -109,11 +108,3 @@ Halo的诞生离不开下面这些项目：
 - [Layer](https://github.com/sentsin/layer.git)：个人认为最实用最好看的弹出层组件，没有之一
 - [Jquery-Toast](https://github.com/kamranahmedse/jquery-toast-plugin)：消息提示组件
 - [Pjax](https://github.com/defunkt/jquery-pjax.git)：pushState + ajax = pjax
-
-## Donate 捐赠
-
-> 如果Halo对你有帮助，可以请作者喝瓶娃哈哈哈哈哈哈哈哈哈哈。
-
-| 支付宝  | 微信  |
-| :------------: | :------------: |
-| <img src="https://cdn.ryanc.cc/img/github/donate/alipay.png" width="150"/>  | <img src="https://cdn.ryanc.cc/img/github/donate/wechat.png" width="150" />  |
